@@ -1,1 +1,1021 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>19 Gifts For You 🎀</title>
+
+<style>
+/* =====================================================
+   🌸 BASIC SETTINGS
+   ===================================================== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:"Poppins",Arial,sans-serif;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ffe4ec,#fff5f8,#e8f7ff);
+    color:#5b4050;
+}
+
+.page{
+    width:100vw;
+    height:100vh;
+    display:none;
+    position:relative;
+    overflow:hidden;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+}
+
+.page.active{
+    display:flex;
+}
+
+.card{
+    width:min(92%,500px);
+    max-height:90vh;
+    overflow:auto;
+    padding:30px 22px;
+    border-radius:30px;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 50px rgba(160,90,120,.18);
+    border:1px solid rgba(255,255,255,.8);
+    position:relative;
+    z-index:5;
+}
+
+h1{
+    font-size:clamp(30px,8vw,55px);
+    color:#e85d88;
+    margin-bottom:12px;
+}
+
+h2{
+    font-size:clamp(24px,6vw,38px);
+    color:#d94f7d;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.small{
+    font-size:13px;
+    opacity:.75;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:13px 22px;
+    margin:8px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#ff82a8,#ff5f91);
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(235,80,130,.25);
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+/* =====================================================
+   🧸 PAGE 1
+   ===================================================== */
+
+.teddy-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    margin:20px 0;
+    position:relative;
+}
+
+.teddy{
+    font-size:105px;
+    animation:breathe 2s infinite ease-in-out;
+}
+
+.teddy:nth-child(2){
+    animation-delay:.3s;
+}
+
+@keyframes breathe{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+}
+
+.love{
+    position:fixed;
+    pointer-events:none;
+    z-index:20;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* =====================================================
+   😂 PAGE 2
+   ===================================================== */
+
+.fake-box{
+    padding:22px;
+    margin:20px 0;
+    border-radius:20px;
+    background:#fff0f5;
+}
+
+.fake-box strong{
+    color:#e34d7c;
+}
+
+.tap-secret{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#ffd4e2,#fff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:25px auto;
+    font-size:55px;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(200,80,120,.2);
+    transition:.3s;
+    user-select:none;
+}
+
+.tap-secret:active{
+    transform:scale(.85);
+}
+
+/* =====================================================
+   🎁 PAGE 3
+   ===================================================== */
+
+.gift{
+    font-size:100px;
+    animation:giftBounce 1.4s infinite;
+}
+
+@keyframes giftBounce{
+    0%,100%{transform:translateY(0) rotate(0)}
+    50%{transform:translateY(-15px) rotate(5deg)}
+}
+
+/* =====================================================
+   🎀 PAGE 4
+   ===================================================== */
+
+.big-birthday{
+    font-size:clamp(35px,10vw,70px);
+    font-weight:900;
+    background:linear-gradient(90deg,#ff4f87,#ff9fba,#d85dff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.number19{
+    font-size:100px;
+    font-weight:900;
+    color:#ff6e99;
+    text-shadow:0 8px 20px rgba(255,90,140,.2);
+}
+
+.signature{
+    margin-top:20px;
+    font-size:20px;
+    color:#b74870;
+}
+
+/* =====================================================
+   💌 PAGE 5
+   ===================================================== */
+
+.message{
+    text-align:left;
+    padding:22px;
+    border-radius:20px;
+    background:#fff8fb;
+    border:2px dashed #ffb2c9;
+    min-height:180px;
+}
+
+.message p{
+    white-space:pre-line;
+}
+
+/* =====================================================
+   🐱 PAGE 6
+   ===================================================== */
+
+.cats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    font-size:65px;
+    margin:25px 0;
+}
+
+.flower-row{
+    font-size:35px;
+    margin:15px 0;
+}
+
+/* =====================================================
+   📸 PAGE 7
+   ===================================================== */
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.photo-box{
+    height:150px;
+    border-radius:18px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ffdce8,#fff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#c87591;
+    font-size:14px;
+    border:2px dashed #ffb2c9;
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =====================================================
+   🎊 PAGE 8
+   ===================================================== */
+
+.love-button{
+    font-size:18px;
+    padding:17px 30px;
+}
+
+.final-heart{
+    font-size:100px;
+    animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.18)}
+}
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.nav{
+    margin-top:20px;
+}
+
+.progress{
+    position:fixed;
+    top:12px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:50;
+    font-size:12px;
+    color:#b45c78;
+    background:rgba(255,255,255,.7);
+    padding:7px 14px;
+    border-radius:30px;
+}
+
+/* draggable object */
+
+.drag-area{
+    height:210px;
+    margin:20px 0;
+    border-radius:25px;
+    background:#fff3f7;
+    border:2px dashed #ffacc6;
+    position:relative;
+}
+
+.drag-heart{
+    position:absolute;
+    left:20px;
+    top:75px;
+    font-size:55px;
+    cursor:grab;
+    user-select:none;
+    touch-action:none;
+}
+
+.unlock{
+    display:none;
+    color:#e75483;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* mobile */
+
+@media(max-width:500px){
+    .card{
+        padding:25px 17px;
+    }
+
+    .teddy{
+        font-size:80px;
+    }
+
+    .photo-box{
+        height:125px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     ❤️ PROGRESS
+     ===================================================== -->
+
+<div class="progress" id="progress">Page 1 / 9</div>
+
+
+<!-- =====================================================
+     🧸 PAGE 1 — TEDDY HUG
+     ===================================================== -->
+
+<section class="page active" id="page1">
+
+<div class="card">
+
+    <div class="flower-row">🌸 🌷 💗 🌷 🌸</div>
+
+    <h2>Orey Bujjithallie 🎀</h2>
+
+    <div class="teddy-area">
+        <div class="teddy">🧸</div>
+        <div class="teddy">🧸</div>
+    </div>
+
+    <p>
+        A tiny little birthday surprise<br>
+        made specially for you... 🥹💕
+    </p>
+
+    <br>
+
+    <p class="small">
+        There is something waiting for you...
+    </p>
+
+    <button onclick="nextPage()">
+        Tap something cute 💕
+    </button>
+
+    <div class="flower-row">🌷 💕 🌸 💗 🌷</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     😂 PAGE 2 — FAKE SURPRISE
+     ===================================================== -->
+
+<section class="page" id="page2">
+
+<div class="card">
+
+    <h2>😂 Oops...</h2>
+
+    <div class="fake-box">
+
+        <p>
+            <strong>Em ledhu ra 😭😂</strong>
+        </p>
+
+        <br>
+
+        <p>
+            First page lone surprise untundhi ani
+            anukunnaava? 👀
+        </p>
+
+        <p>
+            Ayyo ayyo... wait wait 😌
+        </p>
+
+    </div>
+
+    <p>
+        Sare... ikkada unna little heart ni
+        <b>tap cheyyi</b> 👇
+    </p>
+
+    <div class="tap-secret" onclick="secretTap()">
+        💗
+    </div>
+
+    <p id="tapText" class="small">
+        0 / 3 taps 😭
+    </p>
+
+    <button id="continue2" style="display:none" onclick="nextPage()">
+        Okayyy, continue 🎀
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     🎁 PAGE 3 — SURPRISE OPEN
+     ===================================================== -->
+
+<section class="page" id="page3">
+
+<div class="card">
+
+    <div class="gift">🎁</div>
+
+    <h2>Waittt... 👀</h2>
+
+    <p>
+        Now the actual surprise starts...
+    </p>
+
+    <br>
+
+    <p>
+        But before that... one tiny mission 😌
+    </p>
+
+    <div class="drag-area" id="dragArea">
+
+        <div class="drag-heart" id="dragHeart">
+            💗
+        </div>
+
+    </div>
+
+    <p class="small">
+        💗 Drag the heart to the other side
+    </p>
+
+    <p id="unlockText" class="unlock">
+        🎊 YOU UNLOCKED IT! 🎊
+    </p>
+
+    <button id="continue3" style="display:none" onclick="nextPage()">
+        Open the surprise 🎁
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     🎂 PAGE 4 — 19TH BIRTHDAY
+     ===================================================== -->
+
+<section class="page" id="page4">
+
+<div class="card">
+
+    <div class="flower-row">
+        🌸 🌷 💕 🌷 🌸
+    </div>
+
+    <div class="big-birthday">
+        HAPPY BIRTHDAY
+    </div>
+
+    <div class="number19">
+        19
+    </div>
+
+    <h2>🎀 Bujjithallie 🎀</h2>
+
+    <p>
+        Today is your dayyyy! 🥹💗
+    </p>
+
+    <p>
+        And I want to fill your
+        <b>19th birthday</b>
+        with <b>19 little gifts</b> 🎁
+    </p>
+
+    <div class="signature">
+        From ur lovely Nanii 💕
+    </div>
+
+    <br>
+
+    <button onclick="nextPage()">
+        Open your message 💌
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     💌 PAGE 5 — YOUR MESSAGE
+     
+     ✏️ EDIT THE MESSAGE BELOW
+     ===================================================== -->
+
+<section class="page" id="page5">
+
+<div class="card">
+
+    <div class="flower-row">🌸 💗 🌷 🥹 🌸</div>
+
+    <h2>For You... 💌</h2>
+
+    <div class="message">
+
+        <!-- ============================================
+             ✏️ EDIT YOUR PERSONAL MESSAGE HERE
+             ============================================ -->
+
+        <p>
+Happy Birthdayyy bujjithallie 🎀🥹
+
+Nuvvu naa life lo entha special person oo
+words lo cheppadam konchem kastame.
+
+Mana friendship lo unna small small memories,
+funny moments, fights, silly talks,
+anni naaku chala special. 💗
+
+Ippudu nee 19th birthday...
+nee life lo ee year full of happiness,
+peace, beautiful memories and success
+tho nindipovali ani heartfully wish chesthunna. 🌸
+
+Always keep smiling, always be happy
+and never forget how special you are. 🫂💕
+
+Once again...
+HAPPIEST BIRTHDAYYY 🎂🎀
+
+From your lovely Nanii 💗
+        </p>
+
+    </div>
+
+    <button onclick="nextPage()">
+        More surprises 🐱
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     🐱 PAGE 6 — CUTE PAGE
+     ===================================================== -->
+
+<section class="page" id="page6">
+
+<div class="card">
+
+    <div class="cats">
+        🐱 🐱 🐱
+    </div>
+
+    <h2>Orey Ammadii 🥹</h2>
+
+    <p>
+        One cute page because
+        normal birthday wishes are boring 😭😂
+    </p>
+
+    <div class="flower-row">
+        🌸 🌷 💗 🌷 🌸
+    </div>
+
+    <p>
+        You deserve all the happiness,
+        flowers, hugs and cute moments. 🫂💕
+    </p>
+
+    <br>
+
+    <p>
+        🧸 + 🫂 + 💕 + 🌸 + 🐱 + 🎀
+    </p>
+
+    <button onclick="nextPage()">
+        Let's see our memories 📸
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     📸 PAGE 7 — PHOTOS
+     
+     ✏️ REPLACE THE PHOTO URLs
+     ===================================================== -->
+
+<section class="page" id="page7">
+
+<div class="card">
+
+    <h2>Our Little Memories 📸</h2>
+
+    <p class="small">
+        Some moments that deserve a little space here 💗
+    </p>
+
+    <div class="photo-grid">
+
+        <!-- ============================================
+             ✏️ PHOTO 1
+             Replace "photo1.jpg" with your image
+             ============================================ -->
+
+        <div class="photo-box">
+            <img src="photo1.jpg"
+                 alt="Our memory 1"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='📸 Memory 1';">
+        </div>
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo-box">
+            <img src="photo2.jpg"
+                 alt="Our memory 2"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='📸 Memory 2';">
+        </div>
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo-box">
+            <img src="photo3.jpg"
+                 alt="Our memory 3"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='📸 Memory 3';">
+        </div>
+
+        <!-- PHOTO 4 -->
+
+        <div class="photo-box">
+            <img src="photo4.jpg"
+                 alt="Our memory 4"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='📸 Memory 4';">
+        </div>
+
+    </div>
+
+    <button onclick="nextPage()">
+        One last thing... 🎊
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     🎊 PAGE 8 — LOVE RAIN
+     ===================================================== -->
+
+<section class="page" id="page8">
+
+<div class="card">
+
+    <div class="final-heart">
+        💗
+    </div>
+
+    <h2>Extra Love Rain 🎊</h2>
+
+    <p>
+        This button has one job...
+    </p>
+
+    <p>
+        Give you <b>extra extra extra love</b> 😭💕
+    </p>
+
+    <br>
+
+    <button class="love-button" onclick="loveRain()">
+        🎊 TAP FOR EXTRA LOVE 🎊
+    </button>
+
+    <br>
+
+    <button onclick="nextPage()">
+        Final surprise 🥹
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     💗 PAGE 9 — FINAL
+     ===================================================== -->
+
+<section class="page" id="page9">
+
+<div class="card">
+
+    <div class="flower-row">
+        🌸 🌷 💗 🌷 🌸
+    </div>
+
+    <div class="final-heart">
+        🫂
+    </div>
+
+    <h1>Happy Birthdayyy 💗</h1>
+
+    <h2>🎀 Bujjithallie 🎀</h2>
+
+    <p>
+        May your 19th year bring you
+        countless smiles, beautiful memories
+        and everything your heart wishes for. 🌸
+    </p>
+
+    <br>
+
+    <p>
+        Stay the same cute,
+        crazy and special person. 🥹💕
+    </p>
+
+    <br>
+
+    <h2>
+        Love you loads 🫂💗
+    </h2>
+
+    <p class="signature">
+        — Your lovely Nanii 🎀
+    </p>
+
+    <div class="flower-row">
+        🌸 🌷 💕 🧸 🫂 🧸 💕 🌷 🌸
+    </div>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* =====================================================
+   🌸 PAGE SYSTEM
+   ===================================================== */
+
+let currentPage = 1;
+const totalPages = 9;
+
+function showPage(number){
+
+    document.querySelectorAll(".page").forEach(page=>{
+        page.classList.remove("active");
+    });
+
+    document.getElementById("page"+number).classList.add("active");
+
+    currentPage = number;
+
+    document.getElementById("progress").innerText =
+        "Page " + currentPage + " / " + totalPages;
+}
+
+function nextPage(){
+
+    if(currentPage < totalPages){
+        showPage(currentPage + 1);
+    }
+
+}
+
+
+/* =====================================================
+   💕 LOVE RAIN
+   ===================================================== */
+
+const loveSymbols = [
+    "💕",
+    "💗",
+    "💖",
+    "💘",
+    "🌸",
+    "🌷",
+    "🥹",
+    "🎀",
+    "🧸",
+    "🐱"
+];
+
+function createLove(){
+
+    const love = document.createElement("div");
+
+    love.className = "love";
+
+    love.innerText =
+        loveSymbols[Math.floor(Math.random()*loveSymbols.length)];
+
+    love.style.left =
+        Math.random()*100 + "vw";
+
+    love.style.fontSize =
+        (18 + Math.random()*30) + "px";
+
+    love.style.animationDuration =
+        (3 + Math.random()*4) + "s";
+
+    document.body.appendChild(love);
+
+    setTimeout(()=>{
+        love.remove();
+    },7000);
+}
+
+
+/* automatic love rain on first page */
+
+setInterval(()=>{
+    createLove();
+},700);
+
+
+/* =====================================================
+   😂 SECRET TAP — PAGE 2
+   ===================================================== */
+
+let taps = 0;
+
+function secretTap(){
+
+    taps++;
+
+    document.getElementById("tapText").innerText =
+        taps + " / 3 taps 😭";
+
+    if(taps >= 3){
+
+        document.getElementById("tapText").innerText =
+            "Okayyy okayyy 😭💗 You found it!";
+
+        document.getElementById("continue2").style.display =
+            "inline-block";
+
+        for(let i=0;i<15;i++){
+            setTimeout(createLove,i*80);
+        }
+    }
+
+}
+
+
+/* =====================================================
+   💗 DRAG HEART — PAGE 3
+   ===================================================== */
+
+const heart = document.getElementById("dragHeart");
+const area = document.getElementById("dragArea");
+
+let dragging = false;
+
+heart.addEventListener("pointerdown",(e)=>{
+
+    dragging = true;
+
+    heart.setPointerCapture(e.pointerId);
+
+});
+
+heart.addEventListener("pointermove",(e)=>{
+
+    if(!dragging) return;
+
+    const rect = area.getBoundingClientRect();
+
+    let x = e.clientX - rect.left - 25;
+
+    x = Math.max(10,Math.min(x,rect.width-65));
+
+    heart.style.left = x + "px";
+
+    if(x > rect.width - 100){
+
+        document.getElementById("unlockText").style.display =
+            "block";
+
+        document.getElementById("continue3").style.display =
+            "inline-block";
+
+        for(let i=0;i<10;i++){
+            setTimeout(createLove,i*100);
+        }
+
+    }
+
+});
+
+heart.addEventListener("pointerup",()=>{
+    dragging = false;
+});
+
+
+/* =====================================================
+   🎊 EXTRA LOVE RAIN BUTTON
+   ===================================================== */
+
+function loveRain(){
+
+    for(let i=0;i<80;i++){
+
+        setTimeout(()=>{
+            createLove();
+        },i*45);
+
+    }
+
+}
+
+
+/* =====================================================
+   🎉 SMALL CONFETTI WHEN FINAL PAGE OPENS
+   ===================================================== */
+
+const originalShowPage = showPage;
+
+showPage = function(number){
+
+    originalShowPage(number);
+
+    if(number === 4 || number === 9){
+
+        for(let i=0;i<35;i++){
+
+            setTimeout(()=>{
+                createLove();
+            },i*80);
+
+        }
+
+    }
+
+};
+
+</script>
+
+</body>
+</html>
