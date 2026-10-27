@@ -132,14 +132,24 @@ button:active{
     animation:fall linear forwards;
 }
 
-@keyframes fall{
-    0%{
-        transform:translateY(-10vh) rotate(0deg);
-        opacity:1;
+
+.love {
+    position: fixed;
+    top: -40px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
     }
-    100%{
-        transform:translateY(110vh) rotate(360deg);
-        opacity:0;
+
+    100% {
+        transform: translateY(calc(100vh + 80px)) rotate(360deg);
+        opacity: 0;
     }
 }
 
@@ -987,11 +997,12 @@ const loveSymbols = [
     "💘",
     "🌸",
     "🌷",
-    "🥹",
+    "😚",
     "🎀",
     "🧸",
     "🐱"
 ];
+
 
 function createLove(){
 
@@ -1003,7 +1014,9 @@ function createLove(){
         loveSymbols[Math.floor(Math.random()*loveSymbols.length)];
 
     love.style.left =
-        Math.random()*100 + "vw";
+        Math.random() * 100 + "vw";
+
+    love.style.top = "-40px";
 
     love.style.fontSize =
         (18 + Math.random()*30) + "px";
@@ -1017,6 +1030,7 @@ function createLove(){
         love.remove();
     },7000);
 }
+
 
 
 /* automatic love rain on first page */
